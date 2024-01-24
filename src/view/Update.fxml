@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateController">
+   <children>
+      <AnchorPane prefHeight="486.0" prefWidth="702.0">
+         <children>
+            <ImageView fitHeight="494.0" fitWidth="711.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/Restaurant/food4.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" layoutX="4.0" layoutY="14.0" prefHeight="47.0" prefWidth="417.0" text="RESTAURANT ADMIN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label alignment="BOTTOM_CENTER" layoutX="37.0" layoutY="55.0" prefHeight="42.0" prefWidth="350.0" text="Update Restaurant Details" textFill="WHITE">
+               <font>
+                  <Font name="Chiller" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="119.0" prefHeight="16.0" prefWidth="62.0" text="Name:-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="updatename" layoutX="154.0" layoutY="116.0" prefHeight="26.0" prefWidth="220.0" />
+            <Text fill="#f7f7f7" layoutX="35.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:-" wrappingWidth="85.16253280639648">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            
+            
+            <TextField fx:id="updatelocation" layoutX="154.0" layoutY="156.0" prefWidth="220.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <Text fill="WHITE" layoutX="37.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuisines:- " wrappingWidth="71.19998779296873">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <TextField fx:id="updatecuisine" layoutX="154.0" layoutY="196.0" prefWidth="220.0" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ratings:-" wrappingWidth="62.39999999999998">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <TextField fx:id="updaterating" layoutX="154.0" layoutY="236.0" prefWidth="220.0" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timings:-" wrappingWidth="62.39999999999998">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatetiming" layoutX="154.0" layoutY="276.0" prefWidth="220.0" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Cost:-" wrappingWidth="103.99996795654295">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatecost" layoutX="154.0" layoutY="316.0" prefWidth="220.0" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact:-" wrappingWidth="103.99996795654295">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="updatecontact" layoutX="154.0" layoutY="356.0" prefWidth="220.0" />
+            <Button fx:id="updaterestaurant" layoutX="65.0" layoutY="400.0" mnemonicParsing="false" onAction="#updateRestaurants" prefHeight="31.0" prefWidth="157.0" text="Update ">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleterestaurant" layoutX="252.0" layoutY="400.0" mnemonicParsing="false" onAction="#deleteRestaurants" prefHeight="31.0" prefWidth="157.0" text="Delete">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminlogout" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#gotoLogin" prefHeight="27.0" prefWidth="117.0" text="Log Out">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Label fx:id="comment" alignment="CENTER" layoutX="154.0" layoutY="452.0" prefHeight="18.0" prefWidth="270.0" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
